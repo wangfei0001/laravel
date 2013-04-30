@@ -16,6 +16,7 @@ class Main_Index_Controller extends Base_Controller {
 	public function action_index()
 	{
 		// code here..
+        $this->layout->with('title','Test page');
         $this->layout->nest('content', 'main::index.index');
 		//return View::make('main::index.index');
 	}
