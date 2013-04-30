@@ -32,10 +32,17 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('home.index');
-});
+//Route::get('/', function()
+//{
+//	//return View::make('default::index.index');
+//});
+
+//Route::get('(:bundle)', function()
+//{
+//    return 'Welcome to the Admin bundle!';
+//});
+
+Route::get('/', 'main::index@index');
 
 /*
 |--------------------------------------------------------------------------
@@ -110,3 +117,6 @@ Route::filter('auth', function()
 {
 	if (Auth::guest()) return Redirect::to('login');
 });
+
+// Route for Index_Controller
+Route::controller('index');

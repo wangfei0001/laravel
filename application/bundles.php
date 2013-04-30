@@ -37,7 +37,7 @@ return array(
 
 	'docs' => array('handles' => 'docs'),
     'bob',
-    'default',
     'admin' => array('handles' => 'admin'),
+    'main' => array('handles' => 'main'),
     'bootstrapper' => array('auto' => true),
 );
