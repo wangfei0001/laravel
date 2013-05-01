@@ -1,0 +1,138 @@
+body{
+    margin:0px;
+    font-size:12px;
+    text-align:center;
+    word-spacing:2px;
+    background: #FFF url('/img/background.png');
+    padding: 0px 0px;
+}
+
+.search-area{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border: 1px solid #999;
+    height:20px;
+
+}
+.search-area *{
+    border:none;
+    height:20px;
+    vertical-align:top;
+}
+.search-area .search-box{
+    padding-left: 5px;
+}
+
+.login-area{
+    position: absolute;
+    right:5px;
+    font-size:13px;
+}
+.login-area a{
+    text-decoration: none;
+    color:#fff;
+}
+.login-area .nav{
+    display: inline-block;
+    height:34px;
+    line-height: 34px;
+    vertical-align: middle;
+    padding: 0px 16px;
+    color:#6FF;
+    font-weight:bold;
+}
+
+.login-area .nav:hover{
+    cursor: pointer;
+    color:#fff;
+}
+.login-area .nav img#avatar-thumb{
+    width:20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border:1px solid #CCC;
+}
+.login-area .menu{
+    padding-right: 12px;
+    position: relative;
+}
+.login-area .menu em{
+    display: inline-block;
+    background: transparent url(/images/bit01.png) no-repeat right center;
+    height:8px;
+    width:8px;
+    margin-left: 5px;
+}
+.login-area .menu ul{
+    background-color: #fff;
+    position: absolute;
+    right:0px;
+    text-align: left;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+    border: 1px solid #CCCACA;
+    font-weight:normal;
+    display: none;
+}
+.login-area .menu ul li{
+    width:120px;
+}
+.login-area .menu ul li.separator{
+    height: 1px;
+    border-top:1px solid #dcdcdc;
+}
+.login-area .menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0px 16px;
+    color: #000;
+}
+.login-area .menu a:hover{
+    background-color: #dcdcdc;
+}
+.login-area .menu:hover{
+    /*background-color: #ffffff;*/
+}
+.login-area .menu:hover ul{
+    display: block;
+}
+.login-area .mbtn{
+    background-color:#F00;
+    letter-spacing:2px;
+}
+.login-area span.message-count{
+    background-color: #999;
+    display: inline-block;
+    padding: 3px 6px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border-radius:3px;
+    font-weight: bold;
+}
+.login-area span.message-count a{
+    display: none;
+}
+.login-area span.highlight-but{
+
+}
+
+
+
+.footer .navigator{
+    background-color: #FAFAFA;
+    padding: 10px 0px;
+}
+.footer .navigator ul{
+    width:1024px;
+    margin: 0px auto;
+    height: 30px;
+}
+
+.footer .navigator li a{
+    color:#333;
+}
+.footer .navigator li a:link{
+    text-decoration: none;
+}

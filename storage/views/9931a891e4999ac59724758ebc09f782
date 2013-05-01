@@ -5,15 +5,21 @@
     <title><?php echo $title; ?></title>
     <?php echo  HTML::style('foundation/stylesheets/foundation.min.css'); ; ?>
     <?php echo  HTML::style('foundation/stylesheets/app.css'); ; ?>
+    <?php echo  HTML::style('css/style.css'); ; ?>
     <?php echo Asset::container('header')->styles(); ?>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body>
+<?php echo render('main::partials.topnav'); ?>
 <div class="container">
     <?php echo $content; ?>
 </div>
 <?php echo Asset::container('footer')->scripts(); ?>
+
+
+<?php echo render('main::partials.footer'); ?>
+
 </body>
 </html>
