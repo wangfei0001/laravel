@@ -136,3 +136,92 @@ body{
 .footer .navigator li a:link{
     text-decoration: none;
 }
+
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*
+login
+*/
+
+.login-wrap {
+    background-color: #FFF;
+    width: 800px;
+    margin: 160px auto;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.login-connection{
+    width:160px;
+}
+.login-connection a{
+    display: block;
+    margin: 5px 0px;
+}
+
+.login-wrap div form .form-row{
+    width: 400px;
+    height: 36px;
+}
+
+.login-connection {
+    width: 160px;
+}
+
+/*
+SNS
+*/
+
+.connection-btn{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #c5c5c5;
+    background: -moz-linear-gradient(19% 75% 90deg, #E5E5E5, #FAFAFA);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+    padding:8px 8px 8px 28px;
+    vertical-align:middle;
+    font-size: 16px;
+    color:#666;
+}
+
+.connection-btn:hover{
+    border:1px solid #52d6fc;
+    background: -moz-linear-gradient(19% 75% 90deg, #d4f1fa, #b9eaf9);
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9eaf9), to(#d4f1fa));
+}
+
+.connection-btn span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: transparent url(/img/connection_icon.png) no-repeat;
+    margin-right: 8px;
+}
+#weibo{
+    background-position: 0px -96px;
+}
+#tengxun{
+
+}
+#renren{
+    background-position: 0px -24px;
+}
+#qq{
+    background-position: 0px -48px;
+}
+#facebbok{
+    background-position: 0px -120px;
+}
+#twitter{
+    background-position: 0px -144px;
+}

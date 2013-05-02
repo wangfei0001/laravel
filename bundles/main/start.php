@@ -33,3 +33,7 @@ Autoloader::map(array(
 Autoloader::directories(array(
 
 ));
+
+Autoloader::map(array(
+    'Main_Base_Controller' => Bundle::path('main').'controllers/base.php',
+));

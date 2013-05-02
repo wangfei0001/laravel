@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{$title}}</title>
-    {{ HTML::style('foundation/stylesheets/foundation.min.css'); }}
+    {{ HTML::style('foundation/stylesheets/foundation.css'); }}
     {{ HTML::style('foundation/stylesheets/app.css'); }}
     {{ HTML::style('css/style.css'); }}
     {{Asset::container('header')->styles()}}
