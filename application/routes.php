@@ -120,3 +120,12 @@ Route::filter('auth', function()
 
 // Route for Index_Controller
 Route::controller('index');
+
+// Route for Account:login_Controller
+Route::controller('account:login');
+
+// Route for Account:login_Controller
+Route::controller('account:login');
+
+// Route for Account:：login_Controller
+Route::controller('account:：login');

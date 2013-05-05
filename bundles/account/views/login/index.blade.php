@@ -14,7 +14,7 @@
 
     <div class="left" style="padding: 30px;">
 
-{{Form::open()}}
+        {{Form::open()}}
 
 
         <div class="form-row">
@@ -47,17 +47,17 @@
             </div>
         </div>
 
-{{Form::token()}}
+        {{Form::token()}}
 
-{{Form::close()}}
+        {{Form::close()}}
 
         <a href="/main/account/forgot">忘记密码?</a>
 
+    </div>
+
+
+
+
 </div>
-
-
-
-
-        </div>
 
 </div>

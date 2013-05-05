@@ -39,5 +39,6 @@ return array(
     'bob',
     'admin' => array('handles' => 'admin'),
     'main' => array('handles' => 'main'),
+    'account' => array('handles' => 'account'),
     'bootstrapper' => array('auto' => true),
 );

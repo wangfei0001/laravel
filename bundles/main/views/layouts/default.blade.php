@@ -7,6 +7,8 @@
     {{ HTML::style('foundation/stylesheets/app.css'); }}
     {{ HTML::style('css/style.css'); }}
     {{Asset::container('header')->styles()}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
