@@ -81,7 +81,7 @@ var wf = {
     refresh: function(){
         if(wf.refresh_sending) return;
         $.ajax({
-            url: '/default/pin/refresh',
+            url: '/main/pin/refresh',
             type: 'POST',
             dataType: 'json',
             data: wf.defaults,

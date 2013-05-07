@@ -12,3 +12,6 @@ Route::controller('main::account');
 
 // Route for Main_Cart_Controller
 Route::controller('main::cart');
+
+// Route for Main_Pin_Controller
+Route::controller('main::pin');

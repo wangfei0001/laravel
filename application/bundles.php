@@ -38,7 +38,31 @@ return array(
 	'docs' => array('handles' => 'docs'),
     'bob',
     'admin' => array('handles' => 'admin'),
-    'main' => array('handles' => 'main'),
-    'account' => array('handles' => 'account'),
+    'main' => array(
+        'handles' => 'main',
+//        'autoloads'=> array(
+////            'map' => array(
+////                'Admin_Base_Controller'       => '(:bundle)/controllers/admin_base.php',
+////            ),
+//            'directories' => array(
+//                '(:bundle)/libraries',
+//                '(:bundle)/models',
+//            )
+//        ),
+//        'auto' => true
+    ),
+    'account' => array(
+        'handles' => 'account',
+        'autoloads'=> array(
+//            'map' => array(
+//                'Admin_Base_Controller'       => '(:bundle)/controllers/admin_base.php',
+//            ),
+            'directories' => array(
+//                '(:bundle)/libraries',
+                '(:bundle)/models',
+            )
+        ),
+        'auto' => true
+    ),
     'bootstrapper' => array('auto' => true),
 );

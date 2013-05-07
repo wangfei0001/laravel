@@ -13,5 +13,6 @@
 //});
 
 Autoloader::namespaces(array(
-    'Account' => Bundle::path('account').'models',
+    'Account\Models' => Bundle::path('account').'models',
 ));
+

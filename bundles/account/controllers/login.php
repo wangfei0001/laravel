@@ -1,5 +1,7 @@
 <?php
 
+use Account\Models\User;
+
 class Account_Login_Controller extends Base_Controller {
 
     public $restful = true;
@@ -17,7 +19,8 @@ class Account_Login_Controller extends Base_Controller {
 	{
         $this->layout->with('title','登录');
         $this->layout->nest('content', 'account::login.index');
-	}
+        $user = new User();
+    }
 
 
     public function post_index()

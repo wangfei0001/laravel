@@ -16,7 +16,7 @@
 */
 
 Autoloader::map(array(
-
+    'Main_Base_Controller' => Bundle::path('main').'controllers/base.php',
 ));
 
 /*
@@ -30,10 +30,7 @@ Autoloader::map(array(
 |
 */
 
-Autoloader::directories(array(
-
-));
-
-Autoloader::map(array(
-    'Main_Base_Controller' => Bundle::path('main').'controllers/base.php',
+Autoloader::namespaces(array(
+    'Main\Models' => Bundle::path('main').'models',
+    //'Admin\Libraries' => Bundle::path('admin').'libraries',
 ));
