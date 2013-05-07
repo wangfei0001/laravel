@@ -53,7 +53,7 @@ class Main_Pin_Controller extends Base_Controller {
             $data['data'] = array();
         }
 
-        $data['config']['image_host'] = Config::get('settings.IMAGE_ROOT_URL');
+        $data['config']['image_host'] = Config::get('settings.image_host');
 //var_dump(Config::get('settings'));
 
         echo Response::json($data);

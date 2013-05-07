@@ -8,6 +8,6 @@
  */
 
 return array(
-    'IMAGE_ROOT_URL'        =>      'http://pinterest.image/'
+    'image_host'        =>      'http://pinterest.image/'
 
 );
