@@ -11,16 +11,18 @@ namespace Main\Models;
 
 use Main\Models\Core\Data;
 
+use laravel\Config;
+
 class Pin extends Data
 {
 
     public static function loadPins($options = array())
     {
-        /*if(Config::get('settings.solr_enable')){
+        if(Config::get('settings.solr_enable')){
 
 
             die('fuck');
-        }else{*/
+        }else{
             $adapter = self::getPinAdapter();
             $response = $adapter->get('Pins',$options);
 
@@ -32,7 +34,7 @@ class Pin extends Data
                     $result[] = new self($val['id_pin']);
                 }
             }
-        //}
+        }
 
         return $result;
     }

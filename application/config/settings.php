@@ -11,4 +11,6 @@ return array(
     'image_host'        =>      'http://pinterest.image/',
 
     'solr_enable'       =>      false,
+
+    'storage_adapter'   =>      'LOCAL_STORAGE_ADAPTER_MYSQL'
 );
