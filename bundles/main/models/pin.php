@@ -29,6 +29,7 @@ class Pin extends Data
             $result = false;
             if($response->isSuccess()){
                 $pins = $response->getResultData();
+
                 $result = array();
                 foreach($pins as $val){
                     $result[] = new self($val['id_pin']);
@@ -37,6 +38,27 @@ class Pin extends Data
         }
 
         return $result;
+    }
+
+
+    private $adapter = null;
+
+    public function __construct($pid)
+    {
+        $memAdapter = self::getLocalStorageAdapter();
+
+        $this->data = $memAdapter->get('pins_' .$pid);
+        if(!$this->data){
+            throw new Exception('Invalid pin id');
+        }
+
+        //parsing comments and fill owner information
+        if(!empty($this->data['comments'])){
+            foreach($this->data['comments'] as $key=>$val){
+                $owner = $memAdapter->get('users_' .$val['fk_user']);
+                $this->data['comments'][$key]['user'] = $owner;
+            }
+        }
     }
 }
 

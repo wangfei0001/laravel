@@ -12,5 +12,19 @@ return array(
 
     'solr_enable'       =>      false,
 
-    'storage_adapter'   =>      'LOCAL_STORAGE_ADAPTER_MYSQL'
+    'storage_adapter'   =>      'LOCAL_STORAGE_ADAPTER_MYSQL',
+
+    'service_url'       =>      'http://pinterest.back/pinservice/',
+
+    'local_storage'     =>      array(
+
+        'host'          =>          'localhost',
+
+        'user'          =>          'root',
+
+        'password'      =>          '',
+
+        'database'      =>          'pinterest'
+
+    )
 );

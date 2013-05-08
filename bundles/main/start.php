@@ -32,6 +32,6 @@ Autoloader::map(array(
 
 Autoloader::namespaces(array(
     'Main\Models' => Bundle::path('main').'models',
-    //'Main\Models\Core' => Bundle::path('main').'models/core',
-    'Main\Models\Test' => Bundle::path('main').'models/test',
+    //'Main\Models\Adapter' => Bundle::path('main').'models/Adapter',
+    //'Main\Models\Test' => Bundle::path('main').'models/test',
 ));

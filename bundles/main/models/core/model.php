@@ -11,6 +11,8 @@ namespace Main\Models\Core;
 
 use laravel\Config;
 
+use Main\Models\Adapter;
+
 class Model
 {
     const ADAPTER_NAME_PIN = 'Pin';
@@ -44,8 +46,13 @@ class Model
 
     public static function getAdapterByName($name)
     {
-        require_once APPLICATION_PATH .'/modules/default/extensions/adapter/core/' .$name .'Adapter.php';
-        require_once APPLICATION_PATH .'/modules/default/extensions/adapter/' .$name .'Adapter.php';
-        return call_user_func(array($name .'Adapter','getInstance'));
+
+        $name = 'Main\\Models\\Adapter\\' .ucfirst(strtolower($name));
+
+        //if(method_exists($name,'getInstance')){
+            return call_user_func(array($name,'getInstance'));
+//        }else{
+//            throw new \RuntimeException('Class [' .$name .'] not found!');
+//        }
     }
 }
