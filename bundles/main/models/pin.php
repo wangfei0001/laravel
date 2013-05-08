@@ -9,14 +9,32 @@
 
 namespace Main\Models;
 
-class Pin
+use Main\Models\Core;
+
+class Pin extends GenericData
 {
 
-
-
-    public static function loadPins()
+    public static function loadPins($options = array())
     {
+        if(Config::get('settings.solr_enable')){
 
+
+            die('fuck');
+        }else{
+            $adapter = self::getPinAdapter();
+            $response = $adapter->get('Pins',$options);
+
+            $result = false;
+            if($response->isSuccess()){
+                $pins = $response->getResultData();
+                $result = array();
+                foreach($pins as $val){
+                    $result[] = new self($val['id_pin']);
+                }
+            }
+        }
+
+        return $result;
     }
 }
 

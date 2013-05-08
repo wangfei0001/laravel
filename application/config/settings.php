@@ -8,6 +8,7 @@
  */
 
 return array(
-    'image_host'        =>      'http://pinterest.image/'
+    'image_host'        =>      'http://pinterest.image/',
 
+    'solr_enable'       =>      false,
 );
