@@ -32,6 +32,10 @@
 </head>
 <body>
 <?php echo render('main::partials.topnav'); ?>
+
+<?php echo render('main::partials.toolbar'); ?>
+
+
 <div class="container">
     <?php echo $content; ?>
 </div>

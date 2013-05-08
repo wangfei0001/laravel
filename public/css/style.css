@@ -341,3 +341,64 @@ Pin lists
     left:180px;
     background-position: 0px -196px;
 }
+
+
+/*
+*   Quick menu
+*/
+
+.top-quickmenu{
+    background-color:#E6F3F9;
+    top: 32px;
+    left:0px;
+    right:0px;
+    position: fixed;
+    z-index: 2000;
+    text-align: center;
+}
+
+.top-quickmenu ul.nav{
+    width:600px;
+    height: 28px;
+    margin: 0px auto;
+}
+.top-quickmenu ul.nav li{
+    float: left;
+    width:120px;
+    padding: 8px;
+}
+.top-quickmenu ul.nav li a:link{
+    text-decoration: none;
+}
+.top-quickmenu ul.nav li a{
+    color:#000;
+}
+.top-quickmenu ul.nav li.menu{
+    cursor: pointer;
+}
+.top-quickmenu ul.nav li.menu em {
+    display: inline-block;
+    background: transparent url(/images/bit01.png) no-repeat right center;
+    height: 8px;
+    width: 8px;
+    margin-left: 5px;
+}
+
+.top-quickmenu ul.nav li.menu ul{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width:480px;
+    text-align: left;
+}
+.top-quickmenu ul.nav li.menu:hover ul{
+    display: block;
+    margin-top: 8px;
+    border: 1px solid #999999;
+    -moz-box-shadow: 0px 0px 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 5px #000000;
+}
+.top-quickmenu ul.nav li.menu ul li:hover{
+    background-color: #F9F9F9;
+}

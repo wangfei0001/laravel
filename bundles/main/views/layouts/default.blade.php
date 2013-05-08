@@ -32,6 +32,10 @@
 </head>
 <body>
 @render('main::partials.topnav')
+
+@render('main::partials.toolbar')
+
+
 <div class="container">
     {{$content}}
 </div>
