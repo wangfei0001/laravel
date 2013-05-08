@@ -5,6 +5,13 @@ body{
     word-spacing:2px;
     background: #FFF url('/img/background.png');
     padding: 0px 0px;
+    text-align: center;
+}
+
+
+#body {
+    margin: 60px auto;
+    width: 1358px;
 }
 
 .search-area{
@@ -224,4 +231,113 @@ SNS
 }
 #twitter{
     background-position: 0px -144px;
+}
+
+
+/*
+Pin lists
+*/
+
+.pin_list{
+    float:left;
+    margin: 0px 6px;
+}
+.pin_list a{
+    color:#3197CB;
+}
+.pin_list a:link{
+    text-decoration: none;
+}
+.pin_list a:hover{
+    text-decoration: underline;
+}
+.pin_list li.pin{
+    width:212px;
+    text-align: left;
+    border: 1px solid #F7F7F7;
+    margin-bottom: 16px;
+    position: relative;
+    background: #FFF url('/images/boxshadow.gif') 0px bottom no-repeat;
+    padding-bottom: 4px;
+}
+
+
+.pin_list li p{
+    margin: 0px;
+    padding: 10px;
+}
+
+.pin_list li p.other{
+    color:#AAA89F;
+}
+
+.pin_list li ul.comments{
+    background-color: #f7f7f7;
+}
+.pin_list li ul.comments li{
+    padding: 5px;
+    border-top:2px solid #FFF;
+}
+.pin_list li ul.comments li *{
+    vertical-align: top;
+}
+.pin_list li ul.comments li img{
+    width:25px;
+    height: 25px;
+}
+.pin_list li ul.comments li span{
+    display: inline-block;
+    width:160px;
+    color:#666;
+}
+.pin_list li ul.comments li span a{
+    color:#8c7ea6;
+    text-decoration: none;
+}
+.pin_list li ul.comments li span a:hover{
+    color:#904060;
+}
+.pin_list li ul.comments li.mycomment{
+    border-top:1px solid #FFF;
+}
+.pin_list li ul.comments li.mycomment img{
+    display: none;
+    margin-right: 5px;
+    float:left;
+}
+.pin_list li ul.comments li.mycomment input[type=text]{
+    float:left;
+    width:199px;
+}
+
+
+
+.pin_list li .tool{
+    display: none;
+}
+
+.pin_list li .tool a{
+    display: block;
+    background: transparent url(/images/btns.png) no-repeat;
+    width:32px;
+    height: 24px;
+    position: absolute;
+    top:12px;
+    z-index: 1000;
+}
+
+.pin_list li .tool a.repin{
+    left:12px;
+}
+.pin_list li .tool a.like{
+    left:90px;
+    background-position: 0px -44px;
+}
+.pin_list li .tool a.unlike{
+    left:90px;
+    background-position: 0px -92px;
+}
+.pin_list li .tool a.comment{
+    left:180px;
+    background-position: 0px -196px;
 }

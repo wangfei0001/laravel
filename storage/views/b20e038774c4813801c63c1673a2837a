@@ -5,4 +5,8 @@
         }).refresh();
     })
 </script>
+    <div id="body">
 
+<div id="water-fall-area" class="clearfix"></div>
+
+    </div>
