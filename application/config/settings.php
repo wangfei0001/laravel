@@ -8,6 +8,8 @@
  */
 
 return array(
+    'site_name'         =>      '旅行分享 - Olutu.com',
+
     'image_host'        =>      'http://pinterest.image/',
 
     'solr_enable'       =>      false,

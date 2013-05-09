@@ -1,9 +1,11 @@
 <script type="text/javascript">
     $(function(){
         wf.init({
-            columnsRow: 6
+            columnsRow: 6,
+            catid: {{ $cat['id_category'] }}
         }).refresh();
     })
+
 </script>
 <div id="body">
 

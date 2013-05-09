@@ -12,7 +12,7 @@ class Main_Index_Controller extends Main_Base_Controller {
 
 
 		// code here..
-        $this->layout->with('title','Test page');
+        $this->layout->with('title','首页');
         $this->layout->nest('content', 'main::index.index');
 
 	}

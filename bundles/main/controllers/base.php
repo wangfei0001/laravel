@@ -13,6 +13,9 @@ class Main_Base_Controller extends Base_Controller{
 
     public $layout = 'main::layouts.default';
 
+
+    protected $categories = null;
+
     public function __construct(){
 
         parent::__construct();
@@ -27,11 +30,27 @@ class Main_Base_Controller extends Base_Controller{
      */
     protected function showToolbar()
     {
-        $categoryModel = new Category();
+
+        $cats = $this->getCategories();
 
         $this->layout->with('toolbar', true);
-        $cats = $categoryModel->getCategories();
         $this->layout->nest('toolbarView', 'main::partials.toolbar', array('categories'=>$cats));
     }
 
+
+    /***
+     * @return mixed|null
+     *
+     * Get Categories
+     */
+    protected function getCategories()
+    {
+        if(!$this->categories){
+            $categoryModel = new Category();
+
+            $this->categories = $categoryModel->getCategories();
+        }
+
+        return $this->categories;
+    }
 }
