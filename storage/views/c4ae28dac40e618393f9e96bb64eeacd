@@ -2,11 +2,11 @@
 <html lang="en" ng-app>
 <head>
     <meta charset="utf-8">
-    <title>{{$title}}</title>
-    {{ HTML::style('foundation/stylesheets/foundation.css'); }}
-    {{ HTML::style('foundation/stylesheets/app.css'); }}
-    {{ HTML::style('css/style.css'); }}
-    {{Asset::container('header')->styles()}}
+    <title><?php echo $title; ?></title>
+    <?php echo  HTML::style('foundation/stylesheets/foundation.css'); ; ?>
+    <?php echo  HTML::style('foundation/stylesheets/app.css'); ; ?>
+    <?php echo  HTML::style('css/style.css'); ; ?>
+    <?php echo Asset::container('header')->styles(); ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
 
@@ -31,22 +31,22 @@
     <![endif]-->
 </head>
 <body>
-@render('main::partials.topnav')
+<?php echo render('main::partials.topnav'); ?>
 
-@if ( isset($toolbar) && $toolbar == true )
-    {{$toolbarView}}
-@endif
+<?php if ( isset($toolbar) && $toolbar == true ): ?>
+    <?php echo $toolbarView; ?>
+<?php endif; ?>
 
 
 
 
 <div class="container">
-    {{$content}}
+    <?php echo $content; ?>
 </div>
-{{Asset::container('footer')->scripts()}}
+<?php echo Asset::container('footer')->scripts(); ?>
 
 
-@render('main::partials.footer')
+<?php echo render('main::partials.footer'); ?>
 
 </body>
 </html>

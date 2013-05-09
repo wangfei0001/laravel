@@ -8,6 +8,13 @@ body{
     text-align: center;
 }
 
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
 
 #body {
     margin: 60px auto;
@@ -349,11 +356,11 @@ Pin lists
 
 .top-quickmenu{
     background-color:#E6F3F9;
-    top: 32px;
+    top: 45px;
     left:0px;
     right:0px;
     position: fixed;
-    z-index: 2000;
+    z-index: 50;
     text-align: center;
 }
 

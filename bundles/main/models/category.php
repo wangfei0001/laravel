@@ -12,12 +12,15 @@ use Main\Models\Core\Model;
 
 class Category
 {
+    /***
+     * Get categories
+     *
+     * @return mixed
+     */
     public function getCategories()
     {
         $memAdapter = Model::getLocalStorageAdapter();
 
         return $memAdapter->get('category');
     }
-
-
 }
