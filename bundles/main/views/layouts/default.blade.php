@@ -48,5 +48,9 @@
 
 @render('main::partials.footer')
 
+
+
+@render('main::partials.addpin')
+
 </body>
 </html>

@@ -14,5 +14,6 @@
 
 Autoloader::namespaces(array(
     'Account\Models' => Bundle::path('account').'models',
+    'Main\Models' => Bundle::path('main').'models',
 ));
 
