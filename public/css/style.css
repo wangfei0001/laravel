@@ -38,6 +38,11 @@ li{
     padding-left: 5px;
 }
 
+.loading{
+    display: none;
+}
+
+
 .login-area{
     position: absolute;
     right:5px;
@@ -408,4 +413,174 @@ Pin lists
 }
 .top-quickmenu ul.nav li.menu ul li:hover{
     background-color: #F9F9F9;
+}
+
+
+
+.round-box{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border:10px solid rgba(0, 0, 0, .4);
+}
+
+.modal-window #title{
+    height: 36px;
+    font-size: 16px;
+    border-bottom: 1px solid #D5D2D2;
+    background-color: whiteSmoke;
+}
+.modal-window #title span {
+    display: inline-block;
+    height: 42px;
+    width: 320px;
+    padding: 10px;
+}
+.modal-window #title #close {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    right: 10px;
+    top: 12px;
+    position: absolute;
+    cursor: pointer;
+    background: transparent url('/images/close.png');
+}
+/*
+Add pin board...
+*/
+.pins-add-board{
+    display:none;
+    text-align: left;
+    width:520px;
+}
+.pins-add-board #content{
+    background-color: #fff;
+}
+
+.pins-add-board input[type=text]{
+    height: 24px;
+}
+
+.pins-add-board .wrap{
+    display: none;
+}
+#wrap_add_url,#wrap_add_upload{
+    padding: 10px;
+    display: none;
+}
+
+#txt_add_url{
+    width:360px;
+    height:24px;
+    margin: 0px;
+}
+
+.arrow-left,.arrow-right{
+    display:none;
+    position: absolute;
+    width:32px;
+    height: 32px;
+    top:100px;
+    cursor: pointer;
+    z-index: 20000;
+}
+#grabing-loading{
+    display: none;
+    position: absolute;
+    left:75px;
+    top:100px;
+}
+.arrow-left{
+    background: transparent url(/images/ArrowLeft.png);
+    left:0px;
+}
+.arrow-right{
+    background: transparent url(/images/ArrowRight.png);
+    right: 0px;
+}
+#pins-shows{
+    padding: 0px 10px 10px 10px;
+}
+#pins-shows-thumb{
+    overflow:hidden;
+    position: relative;
+    width: 180px;
+    height: 240px;
+    background-color: #CCC;
+    margin-right: 10px;
+}
+
+#pins-shows-thumb ul{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width:99999px;
+    cursor: pointer;
+}
+#pins-shows-thumb ul li{
+    float: left;
+}
+
+#pins-shows-thumb ul li .img-check
+{
+    background: transparent url(/images/check.png);
+    width:128px;
+    height:128px;
+    position: absolute;
+}
+/*#pins-shows-thumb ul li img{
+    width: 180px;
+    height: 240px;
+}*/
+#pins-infor-area{
+    width: 290px;
+    position: relative;
+}
+#pins-infor-area form{
+    margin: 0px;
+}
+
+#board-selector{
+    height: 120px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+#board-selector li{
+    padding: 5px 5px;
+}
+
+#addboard{
+
+    border: 1px solid #CCC;
+    padding: 4px 16px 4px 16px;
+    font-size: 14px;
+    color: #9B9999;
+}
+.addboard-loading{
+    position: absolute;
+    right: 8px;
+    top: 130px;
+}
+
+.pins-add-board .wrap div.add_btn{
+    text-decoration: none;
+    display: inline-block;
+    height: 150px;
+    width:250px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pins-add-board .wrap div.add_btn:hover{
+    background-color: #dcdcdc;
+}
+
+.pins-add-board .wrap div#create_board{
+    display: block;
+    width:100%;
+    border-top: 1px solid gray;
+    height: 120px;
 }

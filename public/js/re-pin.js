@@ -150,7 +150,7 @@ repinBox._insertBoard = function(id, name){
 repinBox.getBoards = function(){
     if(repinBox.boardDom.children('li').length > 1) return;   //if we have load it.
     $.ajax({
-        url: '/customer/pins/getboards',
+        url: '/account/board/all',
         type: 'post',
         dataType: 'json',
         async:false,

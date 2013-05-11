@@ -8,9 +8,9 @@
         <div id="create_board" class="add_btn">创建画廊</div>
     </div>
     <div class="wrap">
-        <div id="wrap_add_url">
-            <input type="text" id="txt_add_url" name="txt_add_url" class="txt" data="请拷贝完整的网址，我们将为您抓取图片">
-            <input type="button" id="btn_add_url" value="采集图片">
+        <div id="wrap_add_url" class="clearfix">
+            <input type="text" id="txt_add_url" name="txt_add_url" class="txt left" data="请拷贝完整的网址，我们将为您抓取图片">
+            <input type="button" id="btn_add_url" value="采集图片" class="left small button">
         </div>
 
         <div id="wrap_add_upload">
@@ -37,16 +37,16 @@
 
                         </ul>
                         <input type="text" name="addboard" id="addboard" data="快速创建新画板" maxlength="24">
-                        <img src="/images/loading.gif" class="loading addboard-loading" />
+                        <img src="/img/loading.gif" class="loading addboard-loading" />
                     <div>
-                        <p><label for="keywords">添加标签</label></p>
+                        <label for="keywords">添加标签</label>
                     <input type="text" id="keywords" name="keywords" data=''>
                     </div>
+
+                        <textarea rows="2" cols="32" data="简短的介绍一下吧" name="description" id="description"></textarea>
+
                     <div>
-                        <textarea rows="6" cols="32" data="简短的介绍一下吧" name="description" id="description"></textarea>
-                    </div>
-                    <div>
-                        <input type="button" value="添加图片" id="but-addpin" class="flat-blue" onclick="PinBoard.submit();"> (还可以输入XXX字)
+                        <input type="button" value="添加图片" id="but-addpin" class="small button" onclick="PinBoard.submit();"> (还可以输入XXX字)
                     </div>
                     </form>
                 </div>

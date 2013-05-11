@@ -55,7 +55,7 @@ PinBoard._disableBoardSelector = function(disabled){
 PinBoard.loadBoards = function(){
     if(PinBoard.pinsaddDom.children('option').length > 1) return;   //if we have load it.
     $.ajax({
-        url: '/customer/pins/getboards',
+        url: '/account/board/all',
         type: 'post',
         dataType: 'json',
         success: function(data) {
