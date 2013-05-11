@@ -26,6 +26,6 @@ class Account_Board_Controller extends Base_Controller {
             }
         }
         echo Response::json($result);
-        die();
+        exit();
     }
 }

@@ -14,7 +14,7 @@ $.fn.pinbar = function(settings){
     $(this).children('.image').before(html);
     var $pinbar = $(this).children('.tool');
 
-    $(this).live('mouseenter',function(){
+    $(this).mouseenter(function(){
         $pinbar.fadeIn(100);
     });
 
@@ -127,8 +127,8 @@ $.fn.pinbar.loadComments = function(pinDom){
     });
 };
 
-$(function(){
-    $('.pin_list li').each(function(){
-        $(this).pinbar();
-    });
-});
+//$(function(){
+//    $('.pin_list li').each(function(){
+//        $(this).pinbar();
+//    });
+//});

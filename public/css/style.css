@@ -584,3 +584,36 @@ Add pin board...
     border-top: 1px solid gray;
     height: 120px;
 }
+
+/*
+Pin tool bar
+*/
+.pin_list li .tool{
+    display: none;
+}
+
+.pin_list li .tool a{
+    display: block;
+    background: transparent url(/img/btns.png) no-repeat;
+    width:32px;
+    height: 24px;
+    position: absolute;
+    top:12px;
+    z-index: 49;
+}
+
+.pin_list li .tool a.repin{
+    left:12px;
+}
+.pin_list li .tool a.like{
+    left:90px;
+    background-position: 0px -44px;
+}
+.pin_list li .tool a.unlike{
+    left:90px;
+    background-position: 0px -92px;
+}
+.pin_list li .tool a.comment{
+    left:180px;
+    background-position: 0px -196px;
+}

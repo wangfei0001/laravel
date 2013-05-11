@@ -107,7 +107,7 @@ var wf = {
                     wf.defaults.lists.push(pin.id_pin);
 
                     var html = '';
-                    html += '<ul>';
+                    //html += '<ul>';
                     html += '<li class="pin" data-height="' + pin.thumb_height + '" data-id="' + pin.id_pin + '" data-owner="' + pin.fk_user + '" data-like="0">';
 
                     html += '<p class="image">';
@@ -169,8 +169,12 @@ var wf = {
                     html += '</ul>';
 
                     html += '</li>';
-                    html += '</ul>';
+                    //html += '</ul>';
                     $mainDiv.children('ul:eq(' + idx + ')').append( html );
+
+
+
+                    $mainDiv.children('ul:eq(' + idx + ')').children('li').last().pinbar();
 
                 }
                 //console.log($(data).children().length);return;

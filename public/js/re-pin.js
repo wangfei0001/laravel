@@ -89,7 +89,7 @@ repinBox.getThumbUrl = function(){
     var result = false;
     if(this.pinid != null){
         $.ajax({
-            url: '/customer/pins/getthumb',
+            url: '/account/pin/getthumb',
             type: 'post',
             dataType: 'json',
             async:false,

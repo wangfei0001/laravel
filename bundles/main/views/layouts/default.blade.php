@@ -6,6 +6,7 @@
     {{ HTML::style('foundation/stylesheets/foundation.css'); }}
     {{ HTML::style('foundation/stylesheets/app.css'); }}
     {{ HTML::style('css/style.css'); }}
+    {{ HTML::style('css/pin.css'); }}
     {{Asset::container('header')->styles()}}
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
@@ -51,6 +52,8 @@
 
 
 @render('main::partials.addpin')
+
+@render('main::partials.repin')
 
 </body>
 </html>
