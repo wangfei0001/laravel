@@ -2,7 +2,7 @@
 
 use Main\Models\Board;
 
-class Account_Board_Controller extends Base_Controller {
+class Account_Board_Controller extends Account_Base_Controller {
 
 	public function action_index()
 	{

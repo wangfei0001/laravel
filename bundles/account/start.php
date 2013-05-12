@@ -7,6 +7,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
+Autoloader::map(array(
+    'Account_Base_Controller' => Bundle::path('account').'controllers/base.php',
+));
 
 //Auth::extend('auth', function() {
 //    return new Account\Models\Auth;

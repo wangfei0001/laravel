@@ -34,4 +34,10 @@ class Auth extends Eloquent {
     //    return new Admin;
     }
 
+
+    public function guest()
+    {
+        return true;
+    }
+
 }

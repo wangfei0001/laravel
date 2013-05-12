@@ -4,7 +4,7 @@ use Main\Models\Pin;
 
 use laravel\Config;
 
-class Account_Pin_Controller extends Base_Controller {
+class Account_Pin_Controller extends Account_Base_Controller {
 
 	public function action_index()
 	{

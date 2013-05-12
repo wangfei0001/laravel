@@ -16,7 +16,6 @@
 */
 
 Autoloader::map(array(
-
 ));
 
 /*
