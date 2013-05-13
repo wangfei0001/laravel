@@ -11,13 +11,22 @@ namespace Account\Libraries;
 
 use Laravel\Auth\Drivers\Driver;
 
+use Account\Models\User;
 
 class Myauth extends Driver {
 
 
+
     public function attempt($arguments = array())
     {
-        return $this->login(1);
+        $username = $arguments['username'];
+
+        $password = $arguments['password'];
+
+        $user = new User();
+
+        return $user->login($username, $password);
+
     }
 
     public function retrieve($id)
