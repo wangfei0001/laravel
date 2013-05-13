@@ -18,5 +18,14 @@ Autoloader::map(array(
 Autoloader::namespaces(array(
     'Account\Models' => Bundle::path('account').'models',
     'Main\Models' => Bundle::path('main').'models',
+    'Account\Libraries' => Bundle::path('account').'libraries',
 ));
+
+Autoloader::directories(array(
+    Bundle::path('account').'libraries',
+));
+
+Auth::extend('myauth', function() {
+    return new Account\Libraries\Myauth;
+});
 

@@ -6,7 +6,11 @@ class Account_Base_Controller extends Base_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->filter('before', 'auth');
+
+        //Config::set('auth.driver', 'myauth');
+
+        //$this->filter('before', 'auth');
+
     }
 
 

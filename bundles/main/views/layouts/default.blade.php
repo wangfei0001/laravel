@@ -39,7 +39,14 @@
 @endif
 
 
-
+<!-- check for flash notification message -->
+@if(Session::has('flash_error'))
+<div id="flash_error">{{ Session::get('flash_error') }}</div>
+@elseif(Session::has('flash_success'))
+<div id="flash_success">{{ Session::get('flash_success') }}</div>
+@else
+<div id="flash_notice">{{ Session::get('flash_notice') }}</div>
+@endif
 
 <div class="container">
     {{$content}}

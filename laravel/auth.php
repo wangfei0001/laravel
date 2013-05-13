@@ -42,6 +42,7 @@ class Auth {
 	 */
 	protected static function factory($driver)
 	{
+
 		if (isset(static::$registrar[$driver]))
 		{
 			$resolver = static::$registrar[$driver];
@@ -72,6 +73,7 @@ class Auth {
 	public static function extend($driver, Closure $resolver)
 	{
 		static::$registrar[$driver] = $resolver;
+
 	}
 
 	/**
