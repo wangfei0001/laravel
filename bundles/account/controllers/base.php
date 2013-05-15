@@ -9,7 +9,7 @@ class Account_Base_Controller extends Base_Controller {
 
         //Config::set('auth.driver', 'myauth');
 
-        //$this->filter('before', 'auth');
+        $this->filter('before', 'auth');
 
     }
 

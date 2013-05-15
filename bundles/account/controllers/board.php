@@ -4,11 +4,15 @@ use Main\Models\Board;
 
 class Account_Board_Controller extends Account_Base_Controller {
 
+    public $layout = 'main::layouts.default';
+
 	public function action_index()
 	{
 		// code here..
 
-		return View::make('account::board.index');
+		//return View::make('account::board.index');
+        $this->layout->with('title','Board');
+        $this->layout->nest('content', 'account::board.index');
 	}
 
 

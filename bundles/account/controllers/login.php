@@ -37,4 +37,11 @@ class Account_Login_Controller extends Base_Controller {
             return Redirect::back()->with('error', true);
         }
     }
+
+
+    public function get_logout()
+    {
+        Auth::logout();
+        return Redirect::to_action('account::login@index');
+    }
 }

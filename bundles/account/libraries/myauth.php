@@ -11,6 +11,8 @@ namespace Account\Libraries;
 
 use Laravel\Auth\Drivers\Driver;
 
+use Laravel\Session;
+
 use Account\Models\User;
 
 class Myauth extends Driver {
@@ -25,14 +27,23 @@ class Myauth extends Driver {
 
         $user = new User();
 
-        return $user->login($username, $password);
+        $result = $user->login($username, $password);
+        if($result){
+
+            Session::put('me', $result);
+
+            return $this->login($result['id_user'], array_get($arguments, 'remember'));
+        }else{
+            return false;
+        }
 
     }
 
     public function retrieve($id)
     {
-        var_dump($id);die();
-        return get_my_user_object($id);
+
+
+        return Session::get('me');
     }
 
 }
