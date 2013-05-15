@@ -32,7 +32,9 @@
     <![endif]-->
 </head>
 <body>
-@render('main::partials.topnav')
+
+
+@include('main::partials.topnav')
 
 @if ( isset($toolbar) && $toolbar == true )
     {{$toolbarView}}

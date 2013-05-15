@@ -20,3 +20,20 @@ Route::filter('auth', function()
         return Redirect::to_action('account::login@index')->with('flash_error', 'You must be logged in to view this page!');
 });
 
+View::composer('main::layouts.default', function($view)
+{
+    $title = '';
+
+    if(isset($view->title)){
+        $title = $view->title .' | ';
+    }
+    $title .= Config::get('settings.site_name');
+    $view->with('title', $title);
+
+    $view->with('me', Session::get('me'));
+});
+
+//View::composer('main::partials.topnav', function($view)
+//{
+//    $view->with('me', Session::get('me'));
+//});

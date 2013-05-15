@@ -41,8 +41,6 @@ class Myauth extends Driver {
 
     public function retrieve($id)
     {
-
-
         return Session::get('me');
     }
 

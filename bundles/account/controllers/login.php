@@ -42,6 +42,7 @@ class Account_Login_Controller extends Base_Controller {
     public function get_logout()
     {
         Auth::logout();
+        Session::forget('me');
         return Redirect::to_action('account::login@index');
     }
 }

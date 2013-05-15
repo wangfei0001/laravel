@@ -1,3 +1,4 @@
+
 <nav class="top-bar">
     <!--div class="header-top trans8"></div-->
     <div class="search-area">
@@ -45,7 +46,7 @@
         <ul class="left">
             @if( !Auth::guest() )
             <li class="has-dropdown" onclick="window.location='/customer'">
-                <a href=""> <img src="http://pinterest.image//avatar/1.w30.jpg" id="avatar-thumb">上海阿菲    </a>
+                <a href=""> <img src="http://pinterest.image//avatar/1.w30.jpg" id="avatar-thumb">{{ $me['screenname'] }}</a>
                 <ul class="dropdown">
                     <li><a href="/customer/boards">画板</a></li>
                     <li><a href="/customer/pins">收集</a></li>
